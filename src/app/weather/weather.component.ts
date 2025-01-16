@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WeatherService } from '../weather.service';
 import { FormsModule } from '@angular/forms';
@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css'],
+  encapsulation: ViewEncapsulation.None,
   imports: [CommonModule, FormsModule]
 })
 export class WeatherComponent {
